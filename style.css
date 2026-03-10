@@ -959,3 +959,16 @@ border-radius:4px;
 font-size:14px;
 
 }
+
+.neutrality{
+text-align:center;
+background:#f8f9fb;
+padding:8px;
+font-size:14px;
+color:#444;
+border-bottom:1px solid #eee;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:6px;
+}
