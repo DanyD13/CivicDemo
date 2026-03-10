@@ -699,6 +699,17 @@ border-bottom:1px solid #ddd;
 padding-bottom:12px;
 }
 
+/* FAQ LINKS */
+
+.faq-content a{
+color:#2563eb;
+text-decoration:underline;
+}
+
+.faq-content a:hover{
+color:#1d4ed8;
+}
+
 summary{
 list-style:none;
 cursor:pointer;
