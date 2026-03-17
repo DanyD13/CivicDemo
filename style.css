@@ -988,17 +988,19 @@ gap:6px;
 
 .contact-section {
   margin-top: 50px;
-  text-align: left;
 }
 
 .contact-section h1 {
-  margin-bottom: 10px;
   color: #002147;
+  margin-bottom: 10px;
+  font-size: 32px;
 }
 
 .contact-section p {
-  margin-bottom: 30px;
   color: #555;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .contact-wrapper {
@@ -1012,16 +1014,16 @@ gap:6px;
   flex: 1;
   min-width: 300px;
   background: white;
-  padding: 30px;
+  padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   margin-bottom: 15px;
-  padding: 12px;
+  padding: 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-family: 'Inter', sans-serif;
@@ -1029,30 +1031,33 @@ gap:6px;
 }
 
 .contact-form textarea {
-  min-height: 150px;
+  min-height: 180px;
   resize: vertical;
 }
 
 .contact-form button {
-  padding: 12px 25px;
+  padding: 15px 30px;
   background: #002147;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
   transition: all 0.2s ease;
 }
 
 .contact-form button:hover {
   background: #C9A227;
   color: black;
+  transform: scale(1.05);
 }
 
-/* RIGHT INFO BOX */
+/* RIGHT INFO PANEL */
 .contact-info {
   flex: 1;
   min-width: 300px;
-  padding: 30px;
+  padding: 40px;
   border-radius: 12px;
   color: white;
   background-image: url('mass.jpeg');
@@ -1062,23 +1067,54 @@ gap:6px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
-/* Overlay for readability */
+/* Dark overlay for readability */
 .contact-info::before {
   content: '';
   position: absolute;
   top: 0; left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100%; height: 100%;
   background: rgba(0,0,0,0.45);
   border-radius: 12px;
 }
 
-.contact-info h3,
-.contact-info p {
+.contact-info h2,
+.contact-info p,
+.contact-info ul {
   position: relative;
   z-index: 1;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #C9A227;
+  text-decoration: underline;
+}
+
+.contact-info a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 /* RESPONSIVE */
