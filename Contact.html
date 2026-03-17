@@ -64,6 +64,10 @@
 
 <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
+<input type="hidden" name="_next" value="contact-success.html">
+
+<input type="text" name="_gotcha" style="display:none">
+
 <label>Name</label>
 <input type="text" name="name" required>
 
@@ -89,7 +93,21 @@
 <p>© 2026 CivicNow • Massachusetts Civic Engagement Platform • All Rights Reserved</p>
 
 </footer>
+  
+<script>
 
+const form = document.querySelector("form");
+const button = form.querySelector("button");
+
+form.addEventListener("submit", () => {
+
+button.innerText = "Sending...";
+button.disabled = true;
+
+});
+
+</script>
+  
 </body>
 
 </html>
