@@ -42,7 +42,7 @@ CivicNow</div>
 <div class="nav-box">Voter Info</div>
 </a>
 
-<a href="About.html" class="active">
+<a href="About.html">
 <div class="nav-box">About</div>
 </a>
 
@@ -237,6 +237,19 @@ If you have questions about this Privacy Policy, please contact us:
 
 </footer>
 
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+if(entry.isIntersecting){
+entry.target.classList.add("active");
+}
+});
+});
+
+reveals.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
