@@ -983,3 +983,49 @@ justify-content:center;
 align-items:center;
 gap:6px;
 }
+
+/* CONTACT FORM */
+
+.contact-form-section{
+max-width:600px;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form-section label{
+display:block;
+margin-top:15px;
+font-weight:600;
+}
+
+.contact-form-section input,
+.contact-form-section textarea{
+
+width:100%;
+padding:12px;
+margin-top:6px;
+border:1px solid #ccc;
+border-radius:6px;
+font-family:'Inter', sans-serif;
+}
+
+.contact-form-section button{
+
+margin-top:20px;
+padding:12px 20px;
+background:#002147;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-size:16px;
+}
+
+.contact-form-section button:hover{
+
+background:#C9A227;
+color:black;
+}
